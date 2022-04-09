@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+//Schema for Fundraises
 
 const FundraiseSchema = new mongoose.Schema(
   {

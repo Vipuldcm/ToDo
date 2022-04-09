@@ -2,7 +2,7 @@
 const Transaction = require("../models/Transaction");
 const Fundraise = require("../models/Fundraise");
 const User = require("../models/User");
-
+// Contains the logic for ll transaction API
 addDeposit = async (req, res) => {
   try {
     const txInfo = req.body;

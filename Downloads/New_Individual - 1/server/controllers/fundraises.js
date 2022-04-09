@@ -1,5 +1,5 @@
 const Fundraise = require("../models/Fundraise");
-
+//conatins the logic for the all the fundraise API's
 
 getUserFundraises = async (req, res) => {
   try {

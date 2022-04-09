@@ -1,6 +1,6 @@
 
 const User = require("../models/User");
-
+// Middleware to chek if a user has the required fund balance
 const checkFunds = async (req, res, next) => {
   try {
     const { amount, sender } = req.body;

@@ -1,7 +1,7 @@
 
 const User = require("../models/User");
 
-
+// Contains the logic for users API
 getUser = async (req, res) => {
   try {
     const id = req.params.id;

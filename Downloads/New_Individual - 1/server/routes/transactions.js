@@ -3,7 +3,7 @@ const {addDonation,addDeposit} = require("../controllers/transactions");
 const checkFunds = require("../middlewares/checkFunds");
 
 
-// deposit
+// deposit money for users and donating money
 router.post("/donate", checkFunds, addDonation);
 router.post("/deposit", addDeposit);
 

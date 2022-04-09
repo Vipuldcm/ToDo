@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+//Schema for all Transactions like deposit and donating
 const TransactionSchema = new mongoose.Schema(
   {
     sender: {

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+//Schema for saving user info
 const UserSchema = mongoose.Schema(
   {
     fullName: {
