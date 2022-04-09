@@ -1,9 +1,9 @@
 const cors = require("cors");
 const mongoose = require("mongoose");
 const express = require("express");
-const usersRoutes = require("../front/server/routes/users");
-const transactionsRoutes = require("../front/server/routes/transactions");
-const fundraisesRoutes = require("../front/server/routes/fundraises");
+const usersRoutes = require("./server/routes/users");
+const transactionsRoutes = require("./server/routes/transactions");
+const fundraisesRoutes = require("./server/routes/fundraises");
 const dotenv= require("dotenv");
 dotenv.config();
 
@@ -24,4 +24,4 @@ console.log(process.env.DB_CONNECTION);
 mongoose.connect(process.env.DB_CONNECTION, () => console.log("Connected to DB!"));
 
 // start listening to the server
-app.listen(process.env.PORT || 8081, () => console.log("Listening to port 8081"));
+app.listen(process.env.PORT || 8081, () => console.log("Listening to port 8080"));
